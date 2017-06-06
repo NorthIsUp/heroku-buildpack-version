@@ -2,7 +2,8 @@
 # bin/detect <build-dir>
 
 if [[ -v SOURCE_VERSION ]]; then
-  echo "Source" && exit 0
+    echo "Source version found"
 else
-  echo "No SOURCE_VERSION detected" && exit 1
+    echo "No source version found"
 fi
+exit 0
